@@ -1,0 +1,9 @@
+[package]
+name = "vanishing_cyclotomics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.8.1"
+primal-sieve = "0.3.6"
+malachite = "0.4.7"
