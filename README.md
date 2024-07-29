@@ -17,7 +17,7 @@ fn round_2 = function for 4p real cyclotomic polynomials at x over F_q
 Inputs: 
 - vec_pf_primes, a vector of primes q for F_q.
 - ub: value for the upper bound for prime p.
-- x: value at which cyclotomic polynomial is evaluated
+- x: value at which cyclotomic polynomial is evaluated, the variable accepts only even values.
 -------------------------------------------------------------------------------------------
 IMPORTANT: the code will not compile without modifying 'mathru' library at one line:
 
