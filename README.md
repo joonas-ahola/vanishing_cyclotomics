@@ -29,3 +29,5 @@ IMPORTANT: the code will not compile without modifying 'mathru' library at one l
 to pub struct Polynomial<T> {
     *pub* coef: Vec<T>,
 }
+
+3) Recompile using cargo.
