@@ -24,7 +24,7 @@ fn round_1(vec_of_primes: Vec<usize>, ub: usize, x: isize) -> () {
 
     // vec_of_primes = a list (or vector) of primes being evaluated.
     // ub = upper bound for mod q.
-    // x = cyclotomic polynomial evaluated at x.
+    // x = integer value at which poylomial is evaluated.
 
         vec_of_primes
         .into_par_iter()
@@ -69,9 +69,10 @@ fn round_1(vec_of_primes: Vec<usize>, ub: usize, x: isize) -> () {
 }
 
 fn round_2(vec_of_primes: Vec<usize>, ub: usize, x: isize) -> () {
+    
     // vec_of_primes = a list (or vector) of primes being evaluated.
-    // ub = upper bound for q, i.e. for the order of the field.
-    // x = cyclotomic polynomial evaluated at x.
+    // ub = upper bound for mod q.
+    // x = integer value at which poylomial is evaluated.
 
         vec_of_primes
         .into_par_iter()
