@@ -12,10 +12,18 @@ Inputs:
 - x: value at which cyclotomic polynomial is evaluated
 
 -------------------------------------------------------------------------------------------
-fn round_2 = function for 4p real cyclotomic polynomials at x over F_q
+fn round_2 = function for 4p real cyclotomic polynomials at even x over F_q
 
 Inputs: 
 - vec_pf_primes, a vector of primes q for F_q.
 - ub: value for the upper bound for prime p.
-- x: value at which cyclotomic polynomial is evaluated, the variable accepts only even values.
+- x: value at which cyclotomic polynomial is evaluated.
 -------------------------------------------------------------------------------------------
+fn round_3 = function for 4p real cyclotomic polynomials at all x over F_q
+
+Inputs: 
+- vec_pf_primes, a vector of primes q for F_q.
+- ub: value for the upper bound for prime p.
+- x: value at which cyclotomic polynomial is evaluated.
+-------------------------------------------------------------------------------------------
+
