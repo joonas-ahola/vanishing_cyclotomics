@@ -88,6 +88,9 @@ impl  Mul for Fraction {
 }
 
 impl Polynomial {
+    
+    // A function for calculating nth Chebyshev polynomial of the first kind.
+    
     fn chebyshev_t(n: u32) -> Polynomial {
         match n {
             0 => Polynomial {
@@ -104,6 +107,8 @@ impl Polynomial {
             }
         }
     }
+
+    // A function for calculating nth Chebyshev polynomial of the second kind.
 
     fn chebyshev_u(n: usize) -> Polynomial {
         let _n: usize = 
@@ -142,6 +147,8 @@ impl Polynomial {
         }
         value
     }
+
+    // A function for evaluating a polynomial with integer coefficients at a fraction x.
 
     fn eval_frac(self, x: Fraction) -> Fraction {
         let mut s: isize = self.degree() as isize;
@@ -244,7 +251,7 @@ impl Div for Polynomial {
                 remainder[k + i] -= v_k.clone() * q.clone();
             }
         }
-
+        
         Polynomial { coef: quotient }
     }
 }
